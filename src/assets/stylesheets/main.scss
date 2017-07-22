@@ -1,0 +1,276 @@
+//@import "_normalize.scss";
+@import "_variables.scss";
+
+@font-face {
+  font-family: "PTSansRegular";
+  src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.eot");
+  src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/PTSans/PTSansRegular/PTSansRegular.woff") format("woff"),
+  url("../fonts/PTSans/PTSansRegular/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PTSansBold";
+  src: url("../fonts/PTSans/PTSansBold/PTSansBold.eot");
+  src: url("../fonts/PTSans/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/PTSans/PTSansBold/PTSansBold.woff") format("woff"),
+  url("../fonts/PTSans/PTSansBold/PTSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'fregatregular';
+  src: url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.eot');
+  src: url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.woff2') format('woff2'),
+  url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.woff') format('woff'),
+  url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fregatbold';
+  src: url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.eot');
+  src: url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.woff2') format('woff2'),
+  url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.woff') format('woff'),
+  url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  transition: all 0.4s ease-in;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body, html {
+  min-height: 100%;
+}
+
+.ma-header {
+  padding: 35px 0 0px;
+}
+
+.navbar {
+  background: none;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.navbar-collapse {
+  padding-right: 0;
+}
+
+.ma-logo {
+  text-decoration: none;
+  color: #363636;
+  font-family: $boldPrimaryFont;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #363636;
+}
+
+.navbar-default .navbar-brand {
+  color: #363636;
+}
+
+.navbar-nav {
+  margin: auto -20px;
+}
+
+.nav {
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #363636;
+    font-family: $regularPrimaryFont;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1.35px;
+    padding: 0 !important;
+    position: relative;
+    margin: 0 5px;
+    &:before {
+      content: " \2022 ";
+      position: absolute;
+      right: 7px;
+      left: -7px;
+      top: 0;
+      bottom: 0;
+    }
+    &--first:before {
+      content: "";
+    }
+    &:hover {
+      border-bottom: 1px solid #363636;
+    }
+  }
+}
+
+.ma-hero {
+  padding: 90px 100px 97px;
+  background: #d8efd7 url("../img/hero-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  &__title {
+    color: #4cb027;
+    font-family: $boldPrimaryFont;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    letter-spacing: -2.9px;
+  }
+  &__description {
+    color: #4e4e4e;
+    font-family: $regularSecondaryFont;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 92px;
+  }
+  &__btn-registration {
+    padding: 13px 39px 10px 50px;
+    border: 2px solid #63b945;
+    border-radius: 5px;
+    background: #63b945;
+    color: #ffffff;
+    font-family: $boldSecondaryFont;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 7px;
+    margin-right: 32px;
+    &:hover {
+      box-shadow: 0 0 5px 2px rgba(99, 185, 69, 0.8);
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.2s ease-in;
+    }
+  }
+  &__btn-learn {
+    padding: 13px 18px 10px 20px;
+    border: 2px solid #63b945;
+    border-radius: 5px;
+    color: #63b945;
+    font-family: $boldSecondaryFont;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      box-shadow: 0 0 5px 2px rgba(99, 185, 69, 0.8);
+      text-decoration: none;
+      color: #63b945;
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+
+.ma-about-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ma-about {
+  padding: 38px 0 26px;
+  background: #63b945;
+  &__title {
+    color: #ffffff;
+    font-family: $boldPrimaryFont;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1.9px;
+    padding-top: 39px;
+    margin-left: -61px;
+  }
+  &__description {
+    color: #ffffff;
+    font-family: $regularSecondaryFont;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: -75px;
+  }
+}
+
+.ma-what {
+  padding-top: 43px;
+  padding-bottom: 41px;
+  text-align: center;
+  &__title {
+    color: #4cb027;
+    font-family: $boldPrimaryFont;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    letter-spacing: -2.9px;
+  }
+  &__description {
+    color: #313131;
+    font-family: $regularSecondaryFont;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    padding-left: 36px;
+  }
+}
+
+.ma-slider-content {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 44px;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control.right {
+  right: -136px;
+  top: -43px;
+}
+
+.carousel-control.left {
+  left: -168px;
+  top: -19px;
+}
+
+.glyphicon-chevron-right:before {
+  content: url("../img/arrow-right.svg")
+}
+
+.glyphicon-chevron-left:before {
+  content: url("../img/arrow-left.svg")
+}
+
+.carousel-inner>.item>img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
