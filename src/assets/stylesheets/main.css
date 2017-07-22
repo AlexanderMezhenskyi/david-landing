@@ -164,16 +164,23 @@ body, html {
     padding-top: 39px;
     margin-left: -61px; }
   .ma-about__description {
+    list-style-type: none;
     color: #ffffff;
     font-family: "PTSansRegular", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    margin-right: -75px; }
+    margin-right: -75px;
+    position: relative;
+    padding-left: 10px; }
+    .ma-about__description :before {
+      content: " \003E ";
+      position: absolute;
+      left: 0; }
 
 .ma-what {
   padding-top: 43px;
-  padding-bottom: 41px;
+  padding-bottom: 31px;
   text-align: center; }
   .ma-what__title {
     color: #4cb027;
@@ -218,3 +225,87 @@ body, html {
   display: block;
   max-width: 100%;
   height: 100%; }
+
+.ma-what-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left; }
+
+.ma-what-text {
+  margin-bottom: 25px; }
+  .ma-what-text__list-item {
+    list-style-type: none;
+    color: #666666;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 13px; }
+    .ma-what-text__list-item:before {
+      content: " \2714 ";
+      color: #4cb027;
+      position: absolute;
+      left: -12px;
+      font-size: 24px; }
+    .ma-what-text__list-item--second {
+      padding-left: 26px; }
+      .ma-what-text__list-item--second:before {
+        left: 0; }
+
+.ma-what-description {
+  color: #a2a2a2;
+  font-family: "PTSansRegular", sans-serif;
+  font-size: 15px;
+  font-weight: 400; }
+
+.ma-call {
+  padding: 34px 0 68px;
+  background: #ddffcc;
+  text-align: center; }
+  .ma-call__title {
+    color: #707070;
+    font-family: "fregatbold", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: -2px; }
+  .ma-call__description {
+    color: #a2a2a2;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 41px; }
+  .ma-call__contact-info {
+    color: #656565;
+    font-family: "PTSansRegular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 32px; }
+  .ma-call__contact-address {
+    line-height: 1.2 !important; }
+    .ma-call__contact-address:last-child {
+      padding-left: 12px; }
+  .ma-call__contact-street {
+    font-size: 16px; }
+  .ma-call__calling {
+    border: 1px solid #707070;
+    border-radius: 2px;
+    color: #656565;
+    font-family: "PTSansBold", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 13px 69px 10px 76px; }
+    .ma-call__calling:hover {
+      text-decoration: none;
+      box-shadow: 0px 0px 2px 2px #707070; }
+
+.ma-call-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
