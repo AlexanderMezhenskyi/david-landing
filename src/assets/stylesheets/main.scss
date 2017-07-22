@@ -374,8 +374,8 @@ body, html {
     padding: 13px 69px 10px 76px;
     &:hover {
       text-decoration: none;
-      box-shadow: 0px 0px 2px 2px rgba(112,112,112,1);
-
+      box-shadow: 0px 0px 2px 2px rgba(76,176,39,1);
+      transition: all 0.2s ease-in;
     }
   }
 }
@@ -386,3 +386,91 @@ body, html {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+
+.ma-info {
+  background: #353231 url("../img/info-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  padding: 61px 0 19px;
+  text-align: center;
+  &__title {
+    color: #66cc00;
+    font-family: $boldPrimaryFont;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom:34px;
+    text-transform: uppercase;
+    letter-spacing:-2px;
+  }
+  &__subtitle,
+  &__reason,
+  &__fact-load,
+  &__description {
+    color: #ffffff;
+    font-family: $boldSecondaryFont;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__reason,
+  &__description {
+    font-family:$regularSecondaryFont;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: 66px;
+  }
+  &__fact-hours {
+    color: #63b945;
+    font-family: $boldPrimaryFont;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2.5px;
+    margin-bottom: 59px;
+    &--big {
+      font-size: 48px;
+    }
+  }
+}
+
+
+.ma-info-facts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  &__fact {
+    margin: 30px 15px;
+    position: relative;
+  }
+  &__img {
+    margin-bottom: 26px;
+  }
+  &__description {
+    color: #4cb027;
+    font-family:$regularSecondaryFont;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__overlay {
+    color: #4cb027;
+    font-family: $boldSecondaryFont;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 0.7 !important;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &--small {
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+}
+
+

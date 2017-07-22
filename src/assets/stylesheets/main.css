@@ -302,10 +302,79 @@ body, html {
     padding: 13px 69px 10px 76px; }
     .ma-call__calling:hover {
       text-decoration: none;
-      box-shadow: 0px 0px 2px 2px #707070; }
+      box-shadow: 0px 0px 2px 2px #4cb027;
+      transition: all 0.2s ease-in; }
 
 .ma-call-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around; }
+
+.ma-info {
+  background: #353231 url("../img/info-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  padding: 61px 0 19px;
+  text-align: center; }
+  .ma-info__title {
+    color: #66cc00;
+    font-family: "fregatbold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+    letter-spacing: -2px; }
+  .ma-info__subtitle, .ma-info__reason, .ma-info__fact-load, .ma-info__description {
+    color: #ffffff;
+    font-family: "PTSansBold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .ma-info__reason, .ma-info__description {
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: 66px; }
+  .ma-info__fact-hours {
+    color: #63b945;
+    font-family: "fregatbold", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2.5px;
+    margin-bottom: 59px; }
+    .ma-info__fact-hours--big {
+      font-size: 48px; }
+
+.ma-info-facts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+  .ma-info-facts__fact {
+    margin: 30px 15px;
+    position: relative; }
+  .ma-info-facts__img {
+    margin-bottom: 26px; }
+  .ma-info-facts__description {
+    color: #4cb027;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 20px;
+    font-weight: bold; }
+  .ma-info-facts__overlay {
+    color: #4cb027;
+    font-family: "PTSansBold", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 0.7 !important;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .ma-info-facts__overlay--small {
+      font-size: 17px;
+      font-weight: 400; }
