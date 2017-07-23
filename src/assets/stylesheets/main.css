@@ -374,7 +374,7 @@ body, html {
       font-weight: 400; }
 
 .ma-cases {
-  padding: 82px 0px 80px; }
+  padding: 82px 0px 34px; }
   .ma-cases__title {
     color: #4cb027;
     font-family: "FregatBold", sans-serif;
@@ -484,3 +484,35 @@ body, html {
     margin-left: 9px; }
   .ma-cases-fourth-item__img {
     margin-left: 9px; }
+
+.ma-scheme-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.ma-scheme {
+  background: #ccffcc;
+  padding: 57px 0px 93px; }
+  .ma-scheme__title {
+    color: #63b945;
+    font-family: "FregatBold", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+    text-align: center; }
+  .ma-scheme__subtitle {
+    color: #666666;
+    font-family: "FregatBold", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0px; }
+  .ma-scheme__description {
+    color: #313131;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: -5px; }
+  .ma-scheme__img {
+    margin-left: -15px; }

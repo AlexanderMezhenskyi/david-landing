@@ -461,7 +461,7 @@ body, html {
 }
 
 .ma-cases {
-  padding: 82px 0px 80px;
+  padding: 82px 0px 34px;
   &__title {
     color: #4cb027;
     font-family: $boldPrimaryFont;
@@ -595,4 +595,42 @@ body, html {
   }
 }
 
+
+.ma-scheme-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ma-scheme {
+  background: #ccffcc;
+  padding: 57px 0px 93px;
+  &__title {
+    color: #63b945;
+    font-family: $boldPrimaryFont;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+    text-align: center;
+  }
+  &__subtitle {
+    color: #666666;
+    font-family: $boldPrimaryFont;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  &__description {
+    color: #313131;
+    font-family: $regularSecondaryFont;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: -5px;
+  }
+  &__img {
+    margin-left: -15px;
+  }
+}
 
