@@ -22,27 +22,23 @@
 }
 
 @font-face {
-  font-family: 'fregatregular';
-  src: url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.eot');
-  src: url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.woff2') format('woff2'),
-  url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.woff') format('woff'),
-  url('../fonts/Fregat/Fregat_regular/fregat_regular-webfont.ttf') format('truetype');
-  font-weight: normal;
+  font-family: "FregatRegular";
+  src: url("../fonts/Fregat/FregatRegular/FregatRegular.eot");
+  src: url("../fonts/Fregat/FregatRegular/FregatRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Fregat/FregatRegular/FregatRegular.woff") format("woff"),
+  url("../fonts/Fregat/FregatRegular/FregatRegular.ttf") format("truetype");
   font-style: normal;
-
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'fregatbold';
-  src: url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.eot');
-  src: url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.woff2') format('woff2'),
-  url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.woff') format('woff'),
-  url('../fonts/Fregat/Fregat_bold/fregat_bold-webfont.ttf') format('truetype');
-  font-weight: normal;
+  font-family: "FregatBold";
+  src: url("../fonts/Fregat/FregatBold/FregatBold.eot");
+  src: url("../fonts/Fregat/FregatBold/FregatBold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Fregat/FregatBold/FregatBold.woff") format("woff"),
+  url("../fonts/Fregat/FregatBold/FregatBold.ttf") format("truetype");
   font-style: normal;
-
+  font-weight: normal;
 }
 
 *,
@@ -107,7 +103,7 @@ body, html {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: -1.35px;
+    letter-spacing: -0.1px;
     padding: 0 !important;
     position: relative;
     margin: 0 5px;
@@ -139,7 +135,7 @@ body, html {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 34px;
-    letter-spacing: -2.9px;
+
   }
   &__description {
     color: #4e4e4e;
@@ -203,7 +199,6 @@ body, html {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: -1.9px;
     padding-top: 39px;
     margin-left: -61px;
   }
@@ -236,7 +231,6 @@ body, html {
     font-weight: 700;
     margin-bottom: 23px;
     text-transform: uppercase;
-    letter-spacing: -2.9px;
   }
   &__description {
     color: #313131;
@@ -270,20 +264,18 @@ body, html {
 }
 
 .glyphicon-chevron-right:before {
-  content: url("../img/arrow-right.svg")
+  content: url("../img/arrow-right.png")
 }
 
 .glyphicon-chevron-left:before {
-  content: url("../img/arrow-left.svg")
+  content: url("../img/arrow-left.png")
 }
 
-.carousel-inner>.item>img {
+.carousel-inner > .item > img {
   display: block;
   max-width: 100%;
   height: 100%;
 }
-
-
 
 .ma-what-flex {
   display: flex;
@@ -298,7 +290,7 @@ body, html {
   &__list-item {
     list-style-type: none;
     color: #666666;
-    font-family:$regularSecondaryFont;
+    font-family: $regularSecondaryFont;
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 16px;
@@ -322,7 +314,7 @@ body, html {
 
 .ma-what-description {
   color: #a2a2a2;
-  font-family:$regularSecondaryFont;
+  font-family: $regularSecondaryFont;
   font-size: 15px;
   font-weight: 400;
 }
@@ -333,16 +325,15 @@ body, html {
   text-align: center;
   &__title {
     color: #707070;
-    font-family:$boldPrimaryFont;
+    font-family: $boldPrimaryFont;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 12px;
     text-transform: uppercase;
-    letter-spacing: -2px;
   }
   &__description {
     color: #a2a2a2;
-    font-family:$regularSecondaryFont;
+    font-family: $regularSecondaryFont;
     font-size: 17px;
     font-weight: 400;
     margin-bottom: 41px;
@@ -360,7 +351,7 @@ body, html {
       padding-left: 12px;
     }
   }
-  &__contact-street{
+  &__contact-street {
     font-size: 16px;
   }
   &__calling {
@@ -374,7 +365,7 @@ body, html {
     padding: 13px 69px 10px 76px;
     &:hover {
       text-decoration: none;
-      box-shadow: 0px 0px 2px 2px rgba(76,176,39,1);
+      box-shadow: 0px 0px 2px 2px rgba(76, 176, 39, 1);
       transition: all 0.2s ease-in;
     }
   }
@@ -387,7 +378,6 @@ body, html {
   justify-content: space-around;
 }
 
-
 .ma-info {
   background: #353231 url("../img/info-bg.jpg") 50% no-repeat;
   background-size: cover;
@@ -398,9 +388,8 @@ body, html {
     font-family: $boldPrimaryFont;
     font-size: 32px;
     font-weight: 700;
-    margin-bottom:34px;
+    margin-bottom: 34px;
     text-transform: uppercase;
-    letter-spacing:-2px;
   }
   &__subtitle,
   &__reason,
@@ -415,7 +404,7 @@ body, html {
   }
   &__reason,
   &__description {
-    font-family:$regularSecondaryFont;
+    font-family: $regularSecondaryFont;
     font-size: 15px;
     font-weight: 400;
     text-transform: none;
@@ -427,14 +416,12 @@ body, html {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: -2.5px;
     margin-bottom: 59px;
     &--big {
       font-size: 48px;
     }
   }
 }
-
 
 .ma-info-facts {
   display: flex;
@@ -451,7 +438,7 @@ body, html {
   }
   &__description {
     color: #4cb027;
-    font-family:$regularSecondaryFont;
+    font-family: $regularSecondaryFont;
     font-size: 20px;
     font-weight: bold;
   }
@@ -470,6 +457,141 @@ body, html {
       font-size: 17px;
       font-weight: 400;
     }
+  }
+}
+
+.ma-cases {
+  padding: 82px 0px 80px;
+  &__title {
+    color: #4cb027;
+    font-family: $boldPrimaryFont;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 69px;
+  }
+  &__case {
+    color: #666666;
+    font-family: $regularSecondaryFont;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 26px;
+  }
+  &__description {
+    color: #666666;
+    font-family: $regularSecondaryFont;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  &__link {
+    color: #666666;
+    font-family: $boldSecondaryFont;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+.ma-cases-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ma-cases-first-item {
+  margin-bottom: 77px;
+  padding-left: 71px;
+  &__title {
+    margin-top: 73px;
+    &:before {
+      content: url("../img/one.png");
+      position: absolute;
+      top: -83px;
+      right: 0;
+      bottom: 0;
+      left: 2px;
+      z-index: -1;
+    }
+  }
+}
+
+.ma-cases-second-item {
+  margin-bottom: 46px;
+  &__title {
+    margin-top: 80px;
+    margin-left: 9px;
+    &:before {
+      content: "2";
+      position: absolute;
+      top: -120px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      color: #bff6a3;
+      font-family: $boldPrimaryFont;
+      font-size: 200px;
+      font-weight: 700;
+      z-index: -1;
+    }
+  }
+  &__description {
+    margin-left: 9px;
+  }
+  &__img {
+    margin-left: 6px;
+  }
+}
+
+.ma-cases-third-item {
+  margin-bottom: 78px;
+  padding-left: 61px;
+  &__title {
+    margin-top: 97px;
+    &:before {
+      content: " 3 ";
+      position: absolute;
+      top: -121px;
+      right: 0;
+      bottom: 0;
+      left: -3px;
+      color: #bff6a3;
+      font-family: $boldPrimaryFont;
+      font-size: 200px;
+      font-weight: 700;
+      z-index: -1;
+    }
+  }
+  &__img {
+    margin-left: 4px;
+  }
+}
+
+.ma-cases-fourth-item {
+  margin-bottom: 46px;
+  &__title {
+    margin-top: 94px;
+    margin-left: 9px;
+    &:before {
+      content: "4";
+      position: absolute;
+      top: -129px;
+      right: 0;
+      bottom: 0;
+      left: -3px;
+      color: #bff6a3;
+      font-family: $boldPrimaryFont;
+      font-size: 200px;
+      font-weight: 700;
+      z-index: -1;
+    }
+  }
+  &__description {
+    margin-left: 9px;
+  }
+  &__img {
+    margin-left: 9px;
   }
 }
 
