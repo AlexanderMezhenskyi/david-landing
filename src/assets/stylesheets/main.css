@@ -141,25 +141,6 @@
       position: absolute;
       left: 0; }
 
-.ma-what {
-  padding-top: 43px;
-  padding-bottom: 31px;
-  text-align: center; }
-  .ma-what__title {
-    color: #4cb027;
-    font-family: "FregatBold", sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 23px;
-    text-transform: uppercase; }
-  .ma-what__description {
-    color: #313131;
-    font-family: "PTSansRegular", sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    margin-bottom: 32px;
-    padding-left: 36px; }
-
 .ma-slider-content {
   padding-right: 0px;
   padding-left: 0px;
@@ -187,6 +168,25 @@
   display: block;
   max-width: 100%;
   height: auto; }
+
+.ma-what {
+  padding-top: 43px;
+  padding-bottom: 31px;
+  text-align: center; }
+  .ma-what__title {
+    color: #4cb027;
+    font-family: "FregatBold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 23px;
+    text-transform: uppercase; }
+  .ma-what__description {
+    color: #313131;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    padding-left: 36px; }
 
 .ma-what-flex {
   display: flex;
@@ -684,7 +684,11 @@ body, html {
   .ma-cases-item-text {
     order: 1; }
   .ma-cases-item-img {
-    order: 2; } }
+    order: 2; }
+  .ma-why__img {
+    margin-right: 0; }
+    .ma-why__img--second, .ma-why__img--third, .ma-why__img--fourth {
+      margin-right: 0; } }
 
 @media (max-width: 489px) {
   .ma-hero__btn-registration, .ma-hero__btn-learn {

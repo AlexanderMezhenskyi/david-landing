@@ -1,3 +1,5 @@
+@import "slider";
+
 .ma-what {
   padding-top: 43px;
   padding-bottom: 31px;
@@ -20,40 +22,6 @@
   }
 }
 
-.ma-slider-content {
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-bottom: 44px;
-}
-
-.carousel-control.right,
-.carousel-control.left {
-  background-image: none;
-}
-
-.carousel-control.right {
-  right: -136px;
-  top: -43px;
-}
-
-.carousel-control.left {
-  left: -168px;
-  top: -19px;
-}
-
-.glyphicon-chevron-right:before {
-  content: url("../img/arrow-right.png")
-}
-
-.glyphicon-chevron-left:before {
-  content: url("../img/arrow-left.png")
-}
-
-.carousel-inner > .item > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 .ma-what-flex {
   display: flex;
