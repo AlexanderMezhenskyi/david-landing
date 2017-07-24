@@ -1,0 +1,53 @@
+.ma-why {
+  padding: 54px 0px 3px;
+  &__title {
+    color: #4cb027;
+    font-family: $boldPrimaryFont;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  &__subtitle {
+    color: #666666;
+    font-family: $boldSecondaryFont;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  &__description {
+    color: #666666;
+    font-family: $regularSecondaryFont;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 85px;
+    &--second {
+      margin-bottom: 57px;
+    }
+    &--third {
+      margin-bottom: 72px;
+    }
+    &--fourth {
+      margin-bottom: 75px;
+    }
+  }
+  &__img {
+    margin-right: 26px;
+    margin-top: 5px;
+    float: right;
+    &--second,
+    &--third,
+    &--fourth {
+      margin-right: 44px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.ma-why-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

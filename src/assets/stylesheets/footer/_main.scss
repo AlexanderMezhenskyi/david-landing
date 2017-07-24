@@ -1,0 +1,10 @@
+.ma-footer {
+  padding: 23px 0 4px;
+  background-color: #4c4c4c;
+  &__text {
+    color: #ffffff;
+    font-family: $regularSecondaryFont;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

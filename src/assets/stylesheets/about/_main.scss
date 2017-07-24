@@ -1,0 +1,38 @@
+.ma-about-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item-text {
+    padding-right: 0;
+  }
+}
+
+.ma-about {
+  padding: 38px 0 26px;
+  background: #63b945;
+  &__title {
+    color: #ffffff;
+    font-family: $boldPrimaryFont;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 39px;
+  }
+  &__description {
+    list-style-type: none;
+    color: #ffffff;
+    font-family: $regularSecondaryFont;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    //margin-right: -75px;
+    position: relative;
+    padding-left: 10px;
+    :before {
+      content: " \003E ";
+      position: absolute;
+      left: 0;
+    }
+  }
+}

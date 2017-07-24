@@ -1,0 +1,65 @@
+.ma-header {
+  padding: 35px 0 0px;
+}
+
+.navbar {
+  background: none;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.navbar-collapse {
+  padding-right: 0;
+}
+
+.ma-logo {
+  text-decoration: none;
+  color: #363636;
+  font-family: $boldPrimaryFont;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #363636;
+}
+
+.navbar-default .navbar-brand {
+  color: #363636;
+}
+
+.navbar-nav {
+  margin: auto -20px;
+}
+
+.nav {
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #363636;
+    font-family: $regularPrimaryFont;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.1px;
+    padding: 0 !important;
+    position: relative;
+    margin: 0 5px;
+    &:before {
+      content: " \2022 ";
+      position: absolute;
+      right: 7px;
+      left: -7px;
+      top: 0;
+      bottom: 0;
+    }
+    &--first:before {
+      content: "";
+    }
+    &:hover {
+      border-bottom: 1px solid #363636;
+    }
+  }
+}

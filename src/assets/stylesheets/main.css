@@ -1,45 +1,3 @@
-@font-face {
-  font-family: "PTSansRegular";
-  src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.eot");
-  src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSans/PTSansRegular/PTSansRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "PTSansBold";
-  src: url("../fonts/PTSans/PTSansBold/PTSansBold.eot");
-  src: url("../fonts/PTSans/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSans/PTSansBold/PTSansBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "FregatRegular";
-  src: url("../fonts/Fregat/FregatRegular/FregatRegular.eot");
-  src: url("../fonts/Fregat/FregatRegular/FregatRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Fregat/FregatRegular/FregatRegular.woff") format("woff"), url("../fonts/Fregat/FregatRegular/FregatRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "FregatBold";
-  src: url("../fonts/Fregat/FregatBold/FregatBold.eot");
-  src: url("../fonts/Fregat/FregatBold/FregatBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Fregat/FregatBold/FregatBold.woff") format("woff"), url("../fonts/Fregat/FregatBold/FregatBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-  transition: all 0.4s ease-in;
-  margin: 0;
-  padding: 0; }
-
-html {
-  height: 100%; }
-
-body, html {
-  min-height: 100%; }
-
 .ma-header {
   padding: 35px 0 0px; }
 
@@ -263,10 +221,11 @@ body, html {
   color: #a2a2a2;
   font-family: "PTSansRegular", sans-serif;
   font-size: 15px;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 12px; }
 
 .ma-call {
-  padding: 34px 0 68px;
+  padding: 34px 0 70px;
   background: #ddffcc;
   text-align: center; }
   .ma-call__title {
@@ -317,7 +276,7 @@ body, html {
 .ma-info {
   background: #353231 url("../img/info-bg.jpg") 50% no-repeat;
   background-size: cover;
-  padding: 61px 0 19px;
+  padding: 61px 0 17px;
   text-align: center; }
   .ma-info__title {
     color: #66cc00;
@@ -356,7 +315,7 @@ body, html {
   justify-content: center;
   text-align: center; }
   .ma-info-facts__fact {
-    margin: 30px 15px;
+    margin: 22px 15px;
     position: relative; }
   .ma-info-facts__img {
     margin-bottom: 26px; }
@@ -500,7 +459,7 @@ body, html {
 
 .ma-scheme {
   background: #ccffcc;
-  padding: 57px 0px 93px; }
+  padding: 57px 0px 74px; }
   .ma-scheme__title {
     color: #63b945;
     font-family: "FregatBold", sans-serif;
@@ -554,7 +513,8 @@ body, html {
       margin-bottom: 75px; }
   .ma-why__img {
     margin-right: 26px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    float: right; }
     .ma-why__img--second, .ma-why__img--third, .ma-why__img--fourth {
       margin-right: 44px;
       margin-top: 10px; }
@@ -646,6 +606,48 @@ body, html {
     font-size: 12px;
     font-weight: 400; }
 
+@font-face {
+  font-family: "PTSansRegular";
+  src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.eot");
+  src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSans/PTSansRegular/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "PTSansBold";
+  src: url("../fonts/PTSans/PTSansBold/PTSansBold.eot");
+  src: url("../fonts/PTSans/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSans/PTSansBold/PTSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "FregatRegular";
+  src: url("../fonts/Fregat/FregatRegular/FregatRegular.eot");
+  src: url("../fonts/Fregat/FregatRegular/FregatRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Fregat/FregatRegular/FregatRegular.woff") format("woff"), url("../fonts/Fregat/FregatRegular/FregatRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "FregatBold";
+  src: url("../fonts/Fregat/FregatBold/FregatBold.eot");
+  src: url("../fonts/Fregat/FregatBold/FregatBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Fregat/FregatBold/FregatBold.woff") format("woff"), url("../fonts/Fregat/FregatBold/FregatBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  transition: all 0.4s ease-in;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body, html {
+  min-height: 100%; }
+
 @media (min-width: 768px) and (max-width: 920px) {
   .carousel-control.right {
     right: -8px; }
@@ -678,7 +680,11 @@ body, html {
   .ma-scheme-flex {
     justify-content: center; }
   .ma-scheme__img {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .ma-cases-item-text {
+    order: 1; }
+  .ma-cases-item-img {
+    order: 2; } }
 
 @media (max-width: 489px) {
   .ma-hero__btn-registration, .ma-hero__btn-learn {

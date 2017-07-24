@@ -1,0 +1,134 @@
+.ma-cases {
+  padding: 82px 0px 34px;
+  &__title {
+    color: #4cb027;
+    font-family: $boldPrimaryFont;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 69px;
+  }
+  &__case {
+    color: #666666;
+    font-family: $regularSecondaryFont;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 26px;
+  }
+  &__description {
+    color: #666666;
+    font-family: $regularSecondaryFont;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  &__link {
+    color: #666666;
+    font-family: $boldSecondaryFont;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+.ma-cases-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ma-cases-first-item {
+  margin-bottom: 77px;
+  padding-left: 71px;
+  &__title {
+    margin-top: 73px;
+    &:before {
+      content: url("../img/one.png");
+      position: absolute;
+      top: -83px;
+      right: 0;
+      bottom: 0;
+      left: 2px;
+      z-index: -1;
+    }
+  }
+}
+
+.ma-cases-second-item {
+  margin-bottom: 46px;
+  &__title {
+    margin-top: 80px;
+    margin-left: 9px;
+    &:before {
+      content: "2";
+      position: absolute;
+      top: -120px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      color: #bff6a3;
+      font-family: $boldPrimaryFont;
+      font-size: 200px;
+      font-weight: 700;
+      z-index: -1;
+    }
+  }
+  &__description {
+    margin-left: 9px;
+  }
+  &__img {
+    margin-left: 6px;
+  }
+}
+
+.ma-cases-third-item {
+  margin-bottom: 78px;
+  padding-left: 61px;
+  &__title {
+    margin-top: 97px;
+    &:before {
+      content: " 3 ";
+      position: absolute;
+      top: -121px;
+      right: 0;
+      bottom: 0;
+      left: -3px;
+      color: #bff6a3;
+      font-family: $boldPrimaryFont;
+      font-size: 200px;
+      font-weight: 700;
+      z-index: -1;
+    }
+  }
+  &__img {
+    margin-left: 4px;
+  }
+}
+
+.ma-cases-fourth-item {
+  margin-bottom: 46px;
+  &__title {
+    margin-top: 94px;
+    margin-left: 9px;
+    &:before {
+      content: "4";
+      position: absolute;
+      top: -129px;
+      right: 0;
+      bottom: 0;
+      left: -3px;
+      color: #bff6a3;
+      font-family: $boldPrimaryFont;
+      font-size: 200px;
+      font-weight: 700;
+      z-index: -1;
+    }
+  }
+  &__description {
+    margin-left: 9px;
+  }
+  &__img {
+    margin-left: 9px;
+  }
+}
